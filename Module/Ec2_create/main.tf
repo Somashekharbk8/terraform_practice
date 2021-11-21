@@ -17,7 +17,7 @@ resource "aws_instance" "module_ec2" {
 	ingress {
 		from_port = 22
 		to_port = 22
-		protacal = "tcp"
+		protocol = "tcp"
 		cidr_blocks = ["0.0.0.0/0"]
 	
 	}
@@ -25,7 +25,7 @@ resource "aws_instance" "module_ec2" {
 	ingress {
 		from_port = 80
 		to_port = 80
-		protacal = "tcp"
+		protocol = "tcp"
 		cidr_blocks = ["0.0.0.0/0"]
 	
 	}
@@ -33,7 +33,7 @@ resource "aws_instance" "module_ec2" {
 	egress {
 		from_port = 0
 		to_port = 0
-		protacal = "-1"
+		protocol = "-1"
 		cidr_blocks = ["0.0.0.0/0"]
 		
 	}
