@@ -4,7 +4,7 @@ resource "aws_instance" "myfirst_ec2" {
    key_name = var.pem_key
    
    tags = {
-   name = var.instance_name
+   Name = var.instance_name
    }
    
  }    

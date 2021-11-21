@@ -18,7 +18,7 @@ variable "pem_key" {
 		
 variable "instance_name" {
 		type = string
-		default = "test_instance"
+		default = "terra_instance"
 		
 		}
 		
