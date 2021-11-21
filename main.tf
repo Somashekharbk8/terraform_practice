@@ -1,11 +1,9 @@
-resource "aws_instance" "myfirst_ec2" {
-   ami = var.ec2_ami
-   instance_type = var.ec2_type
-   key_name = var.pem_key
-   
-   tags = {
-   Name = var.instance_name
-   }
-   
- }    
-  
+module "aws_ec2_create" {
+
+	source = "./module/Ec2_create"
+	module_ec2_ami = var.root_ec2_ami
+	module_ec2_type = var.root_ec2_type
+	module_pem_key = var.root_pem_key
+	module_instance_name = var.root_instance_name
+	
+}
