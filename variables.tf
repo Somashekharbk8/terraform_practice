@@ -13,12 +13,12 @@ variable "ec2_type" {
 variable "pem_key" {
 		type = string
 		default = "New_AWS_Account_North-verginia"
-		sensitive = true
+		
 		}
 		
 variable "instance_name" {
 		type = string
-		default = "terraform_intance"
+		default = "test_instance"
 		
 		}
 		
