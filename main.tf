@@ -7,5 +7,5 @@ resource "aws_instance" "myfirst_ec2" {
    Name = var.instance.name
    }
    
-     
+ }    
   
