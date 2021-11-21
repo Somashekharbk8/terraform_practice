@@ -12,7 +12,7 @@ resource "aws_instance" "module_ec2" {
   
   resource "aws_security_group" "sg" {
 	name = "sg"
-	decription = "Allow ssh inbound terraform"
+	description = "Allow ssh inbound terraform"
 	
 	ingress {
 		from_port = 22
