@@ -8,7 +8,7 @@ resource "null_resource" "file_copy" {
 	}
 	provisioner "file" {
 		source = "files/test.txt"
-		destination = "/home/ubuntu/terra.test.txt"
+		destination = "/home/ubuntu/terra_test.txt"
 		}
 		
 }
