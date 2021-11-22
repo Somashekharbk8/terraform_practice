@@ -11,6 +11,6 @@ module "aws_ec2_create" {
 module "aws_file_provisioner" {
 	source = "/Module/file_provisioner"
 	module_ec2-user = var.root_ec2_user
-	module_public_ip = module.aws_ec2_create.ec2_public_ip
+	instance_public_ip = module.aws_ec2_create.ec2_public_ip
 	
 	}
