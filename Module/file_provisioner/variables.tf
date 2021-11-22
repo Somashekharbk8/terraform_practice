@@ -1,4 +1,4 @@
-variable "module_ec2-user" {
+variable "module_ec2_user" {
 	type = string
 	}
 
