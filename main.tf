@@ -9,7 +9,7 @@ module "aws_ec2_create" {
 }
 
 module "aws_file_provisioner" {
-	source = "/module/file_provisioners"
+	source = "/Module/file_provisioners"
 	module_ec2-user = var.root_ec2_user
 	module_public_ip = module.aws_ec2_create.ec2_public_ip
 	
